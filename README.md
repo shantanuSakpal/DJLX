@@ -12,6 +12,8 @@
    
 3: run the project using   `npm start`
 
+This project uses React.js and Taialwindcss.
+
 
 
 
