@@ -8,19 +8,17 @@ import { Cart } from "./pages/Cart";
 import { Contact } from "./pages/Contact";
 import { ErrorPage } from "./pages/ErrorPage";
 import { Home } from "./pages/Home";
-import { Products } from "./pages/Products";
 import { SingleProduct } from "./pages/SingleProduct";
 
 const App = () => {
 
   return (
-    <div className="p-2 bg-blue bg-opacity-20">
+    <div className="p-2 bg-blue-200">
       <Header />
       <Router>
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>
-          <Route path="/products" element={<Products />}></Route>
           <Route path="/cart" element={<Cart />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/singleProduct" element={<SingleProduct />}></Route>

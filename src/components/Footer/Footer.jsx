@@ -2,6 +2,6 @@ import React from 'react'
 
 export const Footer = () => {
     return (
-        <div >Copyright 2023</div>
+        <div className='bottom-0' >Copyright 2023</div>
     )
 }
