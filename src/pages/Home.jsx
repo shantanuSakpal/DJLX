@@ -4,7 +4,7 @@ import { Products } from '../components/Products'
 
 export const Home = () => {
     return (
-        <div className=''>
+        <div className='h-screen'>
             <h1 className='font-bold text-xl m-2'>Welcome to DJLX, The students' OLX.</h1>
             <Products />
 
