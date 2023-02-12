@@ -14,8 +14,8 @@ const App = () => {
 
   return (
     <div className="p-2 bg-blue-200">
-      <Header />
       <Router>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>
@@ -24,11 +24,12 @@ const App = () => {
           <Route path="/singleProduct" element={<SingleProduct />}></Route>
           <Route path="*" element={<ErrorPage />}></Route>
         </Routes>
-      </Router>
-      <div className="bottom-0 rounded-lg text-center w-full bg-blue">
+        <div className="bottom-0 rounded-lg text-center w-full bg-blue">
 
-        <Footer />
-      </div>
+          <Footer />
+        </div>
+      </Router>
+
     </div>
 
   )
