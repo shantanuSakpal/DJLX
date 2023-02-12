@@ -1,5 +1,4 @@
 import React from 'react'
-import { ProductCards } from '../components/ProductCards'
 import { Products } from '../components/Products'
 
 export const Home = () => {

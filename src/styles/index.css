@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+:root{
+  --purple:#7E22CE;
+  --purple-500: #a274ca;
+}
 
 body {
   margin: 0;
@@ -17,16 +21,25 @@ code {
 }
 
 .product-cards{
-  width: 15rem;
-  height : 15rem;
+ box-shadow: 0 0 10px var(--purple);
+  width: 12rem;
+  height : 13rem;
+  transition-duration: 200ms;
+  
+  
+}
+.product-cards:hover{
+  
+  transform: translate(-5px ,-5px);
+  border:#9027eb solid 1px;
   
   
 }
 
 @media only screen and (max-width: 600px) {
   .product-cards{
-    width: 13rem;
-    height : 13rem;
+    width: 10rem;
+    height : 10rem;
     
     
   }

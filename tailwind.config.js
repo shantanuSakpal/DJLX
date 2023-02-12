@@ -16,6 +16,9 @@ module.exports = {
       serif: ['Merriweather', 'serif'],
     },
     extend: {
+      boxShadow: {
+        'custom': '10px 10px 10px var(--purple)'
+      },
       spacing: {
         '128': '32rem',
         '144': '36rem',
