@@ -33,7 +33,7 @@ export const Navbar = () => {
 
 
                         <li>
-                            <NavLink to="#" className="block pl-3 pr-4 ease-out duration-200  text-white rounded-lg text-lg py-1  bg-purple-700 border-4 border-gray-900 hover:border-4 hover:border-purple-700 hover:bg-gray-900 ">Log In</NavLink>
+                            <NavLink to="/login" className="block pl-3 pr-4 ease-out duration-200  text-white rounded-lg text-lg py-1  bg-purple-700 border-4 border-gray-900 hover:border-4 hover:border-purple-700 hover:bg-gray-900 ">Log In</NavLink>
                         </li>
                     </ul>
                 </div>

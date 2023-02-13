@@ -9,11 +9,13 @@ import { Contact } from "./pages/Contact";
 import { ErrorPage } from "./pages/ErrorPage";
 import { Home } from "./pages/Home";
 import { SingleProduct } from "./pages/SingleProduct";
+import Login from "./pages/Login";
 
 const App = () => {
 
   return (
     <div className="p-2 bg-blue-200">
+      
       <Router>
         <Header />
         <Routes>
@@ -23,6 +25,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/singleProduct" element={<SingleProduct />}></Route>
           <Route path="*" element={<ErrorPage />}></Route>
+          <Route path="/login" element={<Login />}></Route>
         </Routes>
         <div className="bottom-0 rounded-lg text-center w-full bg-blue">
 
