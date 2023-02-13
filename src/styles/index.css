@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 :root{
-  --purple:#7E22CE;
+  --purple:#7e22ce;
   --purple-500: #a274ca;
 }
 
@@ -64,6 +64,7 @@ code {
   bottom: 30px;
   background-color: var(--purple);
   border-radius: 50%;
+
   
 }
 
