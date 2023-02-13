@@ -6,10 +6,12 @@ import auth from '../firebaseConfig';
 const Login = () => {
     const [email, setemail] = useState('');
     const [password, setpassword] = useState('');
+    const [confirmpass, setconfirmpassword] = useState('');
 
-    const signin = (e) => {
+    const signUp= (e) => {
         //todo
         e.preventDefault();
+        if(password == confirmpass){
         createUserWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
 
@@ -19,6 +21,7 @@ const Login = () => {
                 console.log('{error}')
 
             })
+        }
 
     }
 
@@ -27,13 +30,13 @@ const Login = () => {
         <div className='h-screen flex  justify-center p-10'>
             <div className="auth-card">
                 
-                <h1 className='title text-lg content-center'>Login</h1>
-                <form onSubmit={signin} className='flex flex-col justify-around p-8'>
+                <h1 className='title text-lg content-center'>Sign-Up</h1>
+                <form onSubmit={signUp} className='flex flex-col justify-around p-8'>
 
                     <div className='txt-field '>
 
                         <label htmlFor="email">email</label>
-                        <input type={'email'} placeholder='Enter your name' value={email} onChange={(e) => setemail(e.target.value)} />
+                        <input type={'email'} placeholder='Enter your email' value={email} onChange={(e) => setemail(e.target.value)} />
 
 
 
@@ -47,13 +50,20 @@ const Login = () => {
 
                     </div>
 
+                    <div className='txt-field'>
+                        <label htmlFor="password">confirm password</label>
+
+                        <input type={'password'} placeholder='Enter your password again' value={password} onChange={(e) => setpassword(e.target.value)} />
+
+                    </div>
+
                     <div className='flex justify-center'>
-                        <button className="block pl-3 pr-4 ease-out duration-200  text-white rounded-lg text-lg py-1  bg-purple-700 border-4  hover:border-4 hover:border-purple-700 hover:bg-gray-900 " type='submit'>Log IN</button>
+                        <button className="block pl-3 pr-4 ease-out duration-200  text-white rounded-lg text-lg py-1  bg-purple-700 border-4  hover:border-4 hover:border-purple-700 hover:bg-gray-900 " type='submit'>Sign-Up</button>
 
                     </div>
 
                     <div className='mt-4' >
-                        <NavLink to={'/signup'} className = 'text-sm'> Don't have an account. Sign-Up</NavLink>
+                        <NavLink to={'/login'} className = 'text-sm'> Already have an account? Log-IN instead.</NavLink>
 
                     </div>
 

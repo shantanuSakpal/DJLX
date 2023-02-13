@@ -11,6 +11,7 @@ import { ErrorPage } from "./pages/ErrorPage";
 import { Home } from "./pages/Home";
 import { SingleProduct } from "./pages/SingleProduct";
 import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
 
 const App = () => {
 
@@ -27,6 +28,7 @@ const App = () => {
           <Route path="/singleProduct" element={<SingleProduct />}></Route>
           <Route path="*" element={<ErrorPage />}></Route>
           <Route path="/login" element={<Login />}></Route>
+          <Route path="/signup" element={<SignUp />}></Route>
         </Routes>
         <div className="bottom-0 rounded-lg text-center w-full bg-blue">
           <GoToTopButton />
