@@ -2,6 +2,7 @@ import React from "react";
 //hello jatin
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Footer } from "./components/Footer/Footer";
+import { GoToTopButton } from "./components/GoToTopButton";
 import { Header } from "./components/Header/Header";
 import { About } from "./pages/About";
 import { Cart } from "./pages/Cart";
@@ -28,6 +29,7 @@ const App = () => {
           <Route path="/login" element={<Login />}></Route>
         </Routes>
         <div className="bottom-0 rounded-lg text-center w-full bg-blue">
+          <GoToTopButton />
 
           <Footer />
         </div>
