@@ -13,6 +13,11 @@ export const Products = () => {
                 <ProductCards />
                 <ProductCards />
                 <ProductCards />
+                <ProductCards />
+                <ProductCards />
+                <ProductCards />
+                <ProductCards />
+                <ProductCards />
 
             </div>
         </>
