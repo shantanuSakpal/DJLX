@@ -1,19 +1,16 @@
 import React from 'react'
 
-const SuggestionButtons = ({items}) => {
+const SuggestionButtons = ({ items }) => {
   return (
     <div className='suggestion-btn '>
 
-        {
-            items.map((item)=>(
-                <button>{item}</button>
-                
-            ))
-        }
-        
-      
+      {
+        items.map((item, id) => (
+          <button key={id}>{item}</button>
 
-      
+        ))
+      }
+
     </div>
   )
 }

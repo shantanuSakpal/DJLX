@@ -16,8 +16,8 @@ import SignUp from "./pages/SignUp";
 const App = () => {
 
   return (
-    <div className="p-2 bg-blue-200">
-      
+    <div className="p-2 bg-blue-100 ">
+
       <Router>
         <Header />
         <Routes>
