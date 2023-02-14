@@ -1,7 +1,7 @@
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom';
-import auth from '../firebaseConfig';
+import {auth, provider} from '../firebaseConfig';
 
 const Login = () => {
     const [email, setemail] = useState('');

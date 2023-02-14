@@ -1,7 +1,10 @@
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import React, { useState } from 'react'
+
 import { NavLink } from 'react-router-dom';
-import auth from '../firebaseConfig';
+
+import { signInWithPopup } from 'firebase/auth';
+import {auth, provider} from '../firebaseConfig';
 
 const Login = () => {
     const [email, setemail] = useState('');
@@ -50,6 +53,13 @@ const Login = () => {
                     <div className='flex justify-center'>
                         <button className="block pl-3 pr-4 ease-out duration-200  text-white rounded-lg text-lg py-1  bg-purple-700 border-4  hover:border-4 hover:border-purple-700 hover:bg-gray-900 " type='submit'>Log IN</button>
 
+                    </div>
+                    <div className='btn ' >
+                        <button className='flex align-middle justify-between'>
+                        <i class="fab fa-google"></i>
+                        <div>Sign-In with google</div>
+                          
+                        </button>
                     </div>
 
                     <div className='mt-4' >
